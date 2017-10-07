@@ -1,0 +1,127 @@
+/*Style for table*/
+/*Ideas for table style adapted from http://www.w3schools.com/css/css_table.asp*/
+
+table, th, td { 
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+}
+
+table {
+    width: 90%;
+    table-layout: auto;
+}
+
+th {
+    height: 30px;
+}
+
+tr:nth-child(even) {background-color: #6BAADA}
+tr:nth-child(odd) {background-color: white;}
+
+tr:hover {
+    background-color: lightgray;
+}
+
+body {
+    font-family: "calibri";
+    font-weight: 300px;
+}
+
+/* Ideas for navigation bar adapted from W3shcools.com at http://www.w3schools.com/css/css_navbar.asp */
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #2F2F2F;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+li {
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    margin: auto;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+/* Idea for making navigation bar responsive adapted from W3schools at http://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive */
+@media screen and (max-width: 800px){
+    ul li, 
+    ul li {float: none;}
+}
+
+
+footer {
+    padding: 10px;
+    background-color: #2F2F2F;
+    color: white;
+    margin: auto;
+    text-align: center;
+    bottom: 0px;
+    position: inherit;
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+/* overflow auto adapted from http://www.w3schools.com/cssref/pr_pos_overflow.asp */
+div.container {
+    width: 90%;
+    font-family: "calibri";
+    background-color: white;
+    margin: auto;
+    height: 90%;
+    overflow: auto;
+}
+
+div.container2 {
+    width: 90%;
+    font-family: "calibri";
+    background-color: white;
+    margin: auto;
+    height: 90%;
+    overflow: auto;
+}
+
+div.left {
+    float: left;
+    width: 45%;
+}
+
+
+div.right {
+    float: right;
+    width: 55%;
+    right: 40px;
+}
